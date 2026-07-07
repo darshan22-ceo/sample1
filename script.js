@@ -1,6 +1,9 @@
 const button = document.getElementById("btn");
 const message = document.getElementById("message");
 
+let count = 0;
+
 button.addEventListener("click", () => {
-    message.textContent = "🎉 Button clicked successfully!";
+    count++;
+    message.textContent = `🎉 Button clicked ${count} time${count > 1 ? "s" : ""}!`;
 });
